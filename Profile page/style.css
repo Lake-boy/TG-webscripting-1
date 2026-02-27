@@ -1,15 +1,49 @@
-* {
-    background-color: #333;
-    color: aliceblue;
+:root{
+    --text-color: aliceblue;
+    --sub-text-color: rgb(180, 220, 255);
+    --background-color: #333;
 }
+
+*{
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+a{
+    color: var(--sub-text-color);
+}
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
+.embed{
+aspect-ratio: 16 / 9;
+width: 100%;
+}
+.embed iframe {
+width: 100%;
+height: 100%;
+border: 1;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
 p#indexP{
     font-size: 1.5rem;
     margin: 0 auto;
     padding: 1rem;
+}
+
+button{
+    color: var(--sub-text-color);
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 0.5rem;
 }
