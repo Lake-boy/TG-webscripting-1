@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Message Form</title>
 </head>
 <body>
     <header>
@@ -18,8 +18,27 @@
     </nav>
 
     <main>
+
+        <form>
+            <fieldset>
+            <label for="f_name">Frist Name</label>
+            <label for="l_name" style="margin-left: 3.5rem;">Last Name</label>
+            <label for="e_mail" style="margin-left: 4rem;">EMail</label>
+            </fieldset>
+            <fieldset>
+            <input type="text", id="f_name", minlength="2", required, placeholder="Dave">
+            <input type="text", id="l_name", minlength="2", required, placeholder="Douglas">
+            <input type="email", id="e_mail", required, placeholder="Douglasiscool123@gmail.com">
+            </fieldset>
+            <fieldset>
+            <textarea name="message" id="message", minlength="10", required, placeholder="Message"></textarea>
+            <input type="submit">
+            <input type="reset">
+            </fieldset>
+        </form>
+
         <a href="index.html">
-            <button>Back</button>
+            <button id="back_button">Back</button>
         </a>
     </main>
 
